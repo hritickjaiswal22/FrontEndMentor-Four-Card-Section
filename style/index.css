@@ -1,0 +1,141 @@
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.FourCardSection {
+  height: fit-content;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.HeadingBox {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.primary-heading__light {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.primary-heading__bold {
+  font-size: 4rem;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+}
+
+.sub-heading {
+  font-size: 1.7rem;
+  color: hsl(229, 6%, 66%);
+  margin-top: 1rem;
+}
+
+.Main {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.FlexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LeftCardBox,
+.MidCardBox,
+.RightCardBox {
+  width: 31%;
+}
+
+.Card {
+  background-color: white;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 5px 10px 1px hsl(229, 6%, 66%);
+  border-radius: 1rem;
+  transition: all 1s;
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+
+.CardTitle {
+  font-size: 2.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.CardDescription {
+  font-size: 1.4rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.CardImageBox {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.LeftCardBox,
+.RightCardBox {
+  display: flex;
+  align-items: center;
+}
+
+.LeftCardBox > .Card {
+  height: 46.5%;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.RightCardBox > .Card {
+  height: 46.5%;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/* media queries */
+@media only screen and (max-width: 1250px) {
+  .FlexContainer {
+    display: block;
+  }
+
+  .LeftCardBox,
+  .MidCardBox,
+  .RightCardBox {
+    width: 100%;
+    display: block;
+  }
+
+  .Card {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Card:hover {
+    transform: scale(1.05);
+  }
+}
